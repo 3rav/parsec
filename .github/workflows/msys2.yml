@@ -19,5 +19,5 @@ jobs:
           mkdir build
           cd build
           export CFLAGS+=" -D_GNU_SOURCE -Wno-attributes -Wno-incompatible-pointer-types -Wno-implicit-function-declaration"
-          cmake -GNinja -DCMAKE_BUILD_TYPE=Release -DPARSEC_DIST_WITH_MPI=OFF ..
+          cmake -GNinja -DCMAKE_BUILD_TYPE=Release ..
           cmake --build . -j $(nproc)
